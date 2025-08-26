@@ -34,9 +34,12 @@ public class MainTest {
 
     @Test
     void divide_shouldThrowIllegalArgumentException_whenNumberOfTwoParamIsNull() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            Main.divide(10, 0);
-        });
+        assertThrows(IllegalArgumentException.class, () -> Main.divide(10, 0));
+    }
+
+    @Test
+    void divide_shouldDivide_whenNumberOfTwoParamIsNotNull() {
+        assertEquals(5, Main.divide(10, 2));
     }
 
     @Test
