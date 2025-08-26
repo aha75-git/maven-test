@@ -13,7 +13,7 @@ public class MainTest {
 
     @Test
     void multiply_shouldReturnProduct() {
-        assertEquals(26, Main.multiply(5, 5));
+        assertEquals(25, Main.multiply(5, 5));
     }
 
     @Test
